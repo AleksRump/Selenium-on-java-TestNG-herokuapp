@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-11T19:29:50Z" name="Default suite" finished-at="2025-01-11T19:30:59Z" duration-ms="69331">
+    <groups>
+    </groups>
+    <test started-at="2025-01-11T19:29:50Z" name="Default test" finished-at="2025-01-11T19:30:59Z" duration-ms="69331">
+      <class name="internetPage">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:internetPage@5b7a7f33]" started-at="2025-01-11T16:29:50Z" name="setUP" finished-at="2025-01-11T16:29:53Z" duration-ms="3642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="AutorizationsALL()[pri:0, instance:internetPage@5b7a7f33]" started-at="2025-01-11T16:29:53Z" name="AutorizationsALL" finished-at="2025-01-11T16:30:03Z" duration-ms="9481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AutorizationsALL -->
+        <test-method is-config="true" signature="thearDown()[pri:0, instance:internetPage@5b7a7f33]" started-at="2025-01-11T16:30:03Z" name="thearDown" finished-at="2025-01-11T16:30:03Z" duration-ms="568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thearDown -->
+        <test-method is-config="true" signature="setUP()[pri:0, instance:internetPage@5b7a7f33]" started-at="2025-01-11T16:30:03Z" name="setUP" finished-at="2025-01-11T16:30:06Z" duration-ms="2142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="clickAllObjects()[pri:0, instance:internetPage@5b7a7f33]" started-at="2025-01-11T16:30:06Z" name="clickAllObjects" finished-at="2025-01-11T16:30:38Z" duration-ms="32228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAllObjects -->
+        <test-method is-config="true" signature="thearDown()[pri:0, instance:internetPage@5b7a7f33]" started-at="2025-01-11T16:30:38Z" name="thearDown" finished-at="2025-01-11T16:30:38Z" duration-ms="409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thearDown -->
+        <test-method is-config="true" signature="setUP()[pri:0, instance:internetPage@5b7a7f33]" started-at="2025-01-11T16:30:38Z" name="setUP" finished-at="2025-01-11T16:30:40Z" duration-ms="1945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="countObjects()[pri:0, instance:internetPage@5b7a7f33]" started-at="2025-01-11T16:30:40Z" name="countObjects" finished-at="2025-01-11T16:30:43Z" duration-ms="2570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countObjects -->
+        <test-method is-config="true" signature="thearDown()[pri:0, instance:internetPage@5b7a7f33]" started-at="2025-01-11T16:30:43Z" name="thearDown" finished-at="2025-01-11T16:30:43Z" duration-ms="343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thearDown -->
+        <test-method is-config="true" signature="setUP()[pri:0, instance:internetPage@5b7a7f33]" started-at="2025-01-11T16:30:43Z" name="setUP" finished-at="2025-01-11T16:30:45Z" duration-ms="1468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="eachObjectOpen()[pri:0, instance:internetPage@5b7a7f33]" started-at="2025-01-11T16:30:45Z" name="eachObjectOpen" finished-at="2025-01-11T16:30:59Z" duration-ms="14076" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eachObjectOpen -->
+        <test-method is-config="true" signature="thearDown()[pri:0, instance:internetPage@5b7a7f33]" started-at="2025-01-11T16:30:59Z" name="thearDown" finished-at="2025-01-11T16:30:59Z" duration-ms="405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thearDown -->
+      </class> <!-- internetPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
