@@ -328,7 +328,7 @@ System.out.println("Вернулись на предыдущую страниц�
 		System.out.println("Вернулись на предыдущую страницу");
 		
 		
-		     // 21 Form Authentication  простая аутентификация с полями ввода на странице БЕЗ ВСПЛЫВАЮЩЕГО ОКНА
+		                  // 21 Form Authentication  простая аутентификация с полями ввода на странице БЕЗ ВСПЛЫВАЮЩЕГО ОКНА
 		System.out.println("Начинаем работу с Form Authentication");
 		driver.findElement(By.xpath("//a[contains(text(),'Form Authentication')]")).click();
 		
@@ -350,6 +350,29 @@ System.out.println("Вернулись на предыдущую страниц�
 		System.out.println(" click logout");
 		
 		// Переходим назад
+				driver.get(baseUrl);
+				System.out.println("Вернулись на предыдущую страницу");
+				
+				
+				                            // 37 Secure File Download
+				System.out.println("Начинаем работу с Secure File Download");
+				driver.findElement(By.xpath("//a[contains(text(),'Secure File Download')]")).click();   
+				//System.err.println("click");
+				System.out.println("click Secure File Download");
+
+
+				String SecureFileDownloadURL = "http://admin:admin@the-internet.herokuapp.com/download_secure";  // вот так писать если есть всплывающее окно от браузера и нужно авторизоваться admin это и логин и пароль но это для этого варианта
+
+				//Переход по URL с авторизацией
+				driver.get(SecureFileDownloadURL);  // Открываем страницу с Basic Auth
+				System.out.println("Страница загружена");
+
+				// Ожидаем загрузки страницы и проверяем наличие элемента
+				WebDriverWait wait1111 = new WebDriverWait(driver, Duration.ofSeconds(1));
+				WebElement element1111 = wait1111.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h3[contains(text(),'Digest Auth')]")));
+				System.out.println("Элемент найден: " + element1111.getText());
+
+				// Переходим назад
 				driver.get(baseUrl);
 				System.out.println("Вернулись на предыдущую страницу");
 		
