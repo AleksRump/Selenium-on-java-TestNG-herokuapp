@@ -3,27 +3,31 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+//import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestNG {
-	
-	private static WebDriver driver=null;
+	static WebDriver driver;
+	static ChromeOptions options;
 	
 	@BeforeMethod
 	public static void setUP() {
-		
-		WebDriverManager.firefoxdriver().setup();
-		driver = new FirefoxDriver();
+		options = new ChromeOptions();
+		options.addArguments("--headless");
+		options.addArguments("--disable-gpu");
+		options.addArguments("--no-sandbox");
+		driver = new ChromeDriver(options); 
 
 	}
 	
-	@Test(enabled = false)  // проверка количества объектов
+	@Test  // проверка количества объектов
 	public static void CountButton() {
 		driver.get("https://trytestingthis.netlify.app/");
 		
@@ -34,7 +38,7 @@ public class TestNG {
         Assert.assertTrue(count <= 5, "Number of button elements exceeds 5");       // Проверить, что количество элементов не больше 5
 	}
 	
-	@Test(priority = 1)   // после нажатия на кнопку проверка наличия текста и сммены url
+	@Test   // после нажатия на кнопку проверка наличия текста и сммены url
 	public static void clickContactAndWatchOtherPage(){
         driver.get("https://trytestingthis.netlify.app/");
         

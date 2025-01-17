@@ -4,20 +4,26 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+//import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class click_All_Internet_without_Try_Catch {
 static WebDriver driver;
+static ChromeOptions options;
 	
 	@BeforeMethod
 	public static void setUP() {
-		WebDriverManager.chromedriver().setup();    //  метод драйвера управления браузерами
-		driver = new ChromeDriver(); 
+		options = new ChromeOptions();
+		options.addArguments("--headless");
+		options.addArguments("--disable-gpu");
+		options.addArguments("--no-sandbox");
+		driver = new ChromeDriver(options);
+
 	}
 	
 	@Test

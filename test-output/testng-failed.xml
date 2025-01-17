@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="internetPage">
+      <class name="click_All_Internet_without_Try_Catch">
         <methods>
-          <include name="eachObjectOpen"/>
+          <include name="ckickALLaObjects"/>
           <include name="setUP"/>
           <include name="thearDown"/>
         </methods>
-      </class> <!-- internetPage -->
+      </class> <!-- click_All_Internet_without_Try_Catch -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -6,22 +6,26 @@ import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;   // открывает все объекты одного типа и проверяет наличие объеуктов другого типа на 
+//import io.github.bonigarcia.wdm.WebDriverManager;   // открывает все объекты одного типа и проверяет наличие объеуктов другого типа на 
                                                     // открывшейся странице, так же шагает назад после выполнения первых 2-х действий
 
 public class click_All_Internet {
-	
-static WebDriver driver;
+	static WebDriver driver;
+	static ChromeOptions options;
 	
 	@BeforeMethod
 	public static void setUP() {
-		WebDriverManager.chromedriver().setup();    //  метод драйвера управления браузерами
-		driver = new ChromeDriver(); 
+		options = new ChromeOptions();
+		options.addArguments("--headless");
+		options.addArguments("--disable-gpu");
+		options.addArguments("--no-sandbox");
+		driver = new ChromeDriver(options);
 	}
 	
 	@Test
