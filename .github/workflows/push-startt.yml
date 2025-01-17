@@ -16,7 +16,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v3
         with:
-          java-version: 21  # Используем Java SE 17
+          java-version: 17  # Используем Java SE 17
           distribution: temurin # Распространение JDK (можно использовать Zulu, AdoptOpenJDK и т.д.)
 
       - name: Cache Maven dependencies
