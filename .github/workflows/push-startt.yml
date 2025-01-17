@@ -30,12 +30,20 @@ jobs:
         run: |
           mvn install  # Устанавливаем зависимости
           mvn test     # Запускаем тесты
+
+      - name: List target directory contents for debugging
+        run: ls -R target/
+
       - name: Save test report
         run: |
           mkdir -p Reports
           TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
           cp target/surefire-reports/*.xml Reports/ # Копируем отчёты TestNG в папку Reports
           echo "Test execution completed on $TIMESTAMP" > Reports/summary_$TIMESTAMP.txt
+
+      - name: Check git status
+        run: git status
+
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
@@ -44,4 +52,4 @@ jobs:
           git commit -m "Add test reports after push" || echo "No changes to commit"
           git push origin master
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
