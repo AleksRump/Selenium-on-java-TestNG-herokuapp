@@ -1,0 +1,30 @@
+name: Push start
+
+on:
+  push:
+    branches:
+      - master  # Работает только при пушах в master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Run tests or generate report
+        run: |
+          echo "Running tests..."
+          mkdir -p Reports # Создаём папку Reports, если её ещё нет
+          TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S") # Генерируем временную метку
+          echo "Tests completed successfully" > Reports/report_$TIMESTAMP.txt
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add Reports/
+          git commit -m "Add report after push" || echo "No changes to commit"
+          git push origin master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
