@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-17T21:07:15 UTC" name="TestNG" finished-at="2025-01-17T21:07:18 UTC" duration-ms="2290">
+  <suite started-at="2025-01-17T21:17:04 UTC" name="TestNG" finished-at="2025-01-17T21:17:06 UTC" duration-ms="2248">
     <groups>
     </groups>
-    <test started-at="2025-01-17T21:07:15 UTC" name="Command line test" finished-at="2025-01-17T21:07:18 UTC" duration-ms="2290">
+    <test started-at="2025-01-17T21:17:04 UTC" name="Command line test" finished-at="2025-01-17T21:17:06 UTC" duration-ms="2248">
       <class name="TestNG">
-        <test-method is-config="true" signature="setUP()[pri:0, instance:TestNG@11e21d0e]" started-at="2025-01-17T21:07:15 UTC" name="setUP" finished-at="2025-01-17T21:07:17 UTC" duration-ms="1126" status="PASS">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:TestNG@11e21d0e]" started-at="2025-01-17T21:17:04 UTC" name="setUP" finished-at="2025-01-17T21:17:05 UTC" duration-ms="1148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method signature="CountButton()[pri:0, instance:TestNG@11e21d0e]" started-at="2025-01-17T21:07:17 UTC" name="CountButton" finished-at="2025-01-17T21:07:17 UTC" duration-ms="190" status="PASS">
+        <test-method signature="CountButton()[pri:0, instance:TestNG@11e21d0e]" started-at="2025-01-17T21:17:05 UTC" name="CountButton" finished-at="2025-01-17T21:17:06 UTC" duration-ms="129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CountButton -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestNG@11e21d0e]" started-at="2025-01-17T21:07:17 UTC" name="tearDownTest" finished-at="2025-01-17T21:07:17 UTC" duration-ms="96" status="PASS">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestNG@11e21d0e]" started-at="2025-01-17T21:17:06 UTC" name="tearDownTest" finished-at="2025-01-17T21:17:06 UTC" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setUP()[pri:0, instance:TestNG@11e21d0e]" started-at="2025-01-17T21:07:17 UTC" name="setUP" finished-at="2025-01-17T21:07:17 UTC" duration-ms="414" status="PASS">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:TestNG@11e21d0e]" started-at="2025-01-17T21:17:06 UTC" name="setUP" finished-at="2025-01-17T21:17:06 UTC" duration-ms="415" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method signature="clickContactAndWatchOtherPage()[pri:0, instance:TestNG@11e21d0e]" started-at="2025-01-17T21:07:17 UTC" name="clickContactAndWatchOtherPage" finished-at="2025-01-17T21:07:18 UTC" duration-ms="325" status="PASS">
+        <test-method signature="clickContactAndWatchOtherPage()[pri:0, instance:TestNG@11e21d0e]" started-at="2025-01-17T21:17:06 UTC" name="clickContactAndWatchOtherPage" finished-at="2025-01-17T21:17:06 UTC" duration-ms="330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickContactAndWatchOtherPage -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestNG@11e21d0e]" started-at="2025-01-17T21:07:18 UTC" name="tearDownTest" finished-at="2025-01-17T21:07:18 UTC" duration-ms="81" status="PASS">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestNG@11e21d0e]" started-at="2025-01-17T21:17:06 UTC" name="tearDownTest" finished-at="2025-01-17T21:17:06 UTC" duration-ms="81" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
