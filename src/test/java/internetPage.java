@@ -19,15 +19,15 @@ import org.testng.annotations.Test;
 
 public class internetPage {
 	static WebDriver driver;
-	static ChromeOptions options;
+	static ChromeOptions options;  // это для безголового теста для github 1
 	
 	@BeforeMethod
 	public static void setUP() {
-		options = new ChromeOptions();
+		options = new ChromeOptions();   // это для безголового теста для github 1
 		options.addArguments("--headless");
 		options.addArguments("--disable-gpu");
 		options.addArguments("--no-sandbox");
-		driver = new ChromeDriver(options); 
+		driver = new ChromeDriver(options);   // это для безголового теста для github 1
 	}
 	
 	@Test
