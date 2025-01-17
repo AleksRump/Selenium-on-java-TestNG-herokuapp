@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-17T16:35:17 PYST" name="Surefire suite" finished-at="2025-01-17T16:35:28 PYST" duration-ms="10607">
+    <groups>
+    </groups>
+    <test started-at="2025-01-17T16:35:17 PYST" name="Surefire test" finished-at="2025-01-17T16:35:28 PYST" duration-ms="10607">
+      <class name="TestNG">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:TestNG@7adda9cc]" started-at="2025-01-17T16:35:17 PYST" name="setUP" finished-at="2025-01-17T16:35:24 PYST" duration-ms="7311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="clickContactAndWatchOtherPage()[pri:1, instance:TestNG@7adda9cc]" started-at="2025-01-17T16:35:24 PYST" name="clickContactAndWatchOtherPage" finished-at="2025-01-17T16:35:26 PYST" duration-ms="1641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickContactAndWatchOtherPage -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestNG@7adda9cc]" started-at="2025-01-17T16:35:26 PYST" name="tearDownTest" finished-at="2025-01-17T16:35:28 PYST" duration-ms="1547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- TestNG -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
